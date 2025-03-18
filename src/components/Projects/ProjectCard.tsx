@@ -30,8 +30,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   } = data
 
   return (
-    <div className="flex flex-col justify-between rounded-[14px] border border-[#1E2D3D] bg-secondary p-5">
-      <div className="flex items-start justify-between gap-2">
+    <div className="flex flex-col justify-between rounded-[14px] border border-[#1E2D3D] bg-secondary p-4 hover:border-transparent hover:shadow-[0_0_10px_2px_rgba(0,255,0,0.7),0_0_20px_5px_rgba(0,255,0,0.5)] transition-all duration-300">
+      <div className="flex items-start justify-between gap-2 ">
         <div className="flex-1">
           <div className="flex flex-col flex-wrap gap-3 sm:flex-row sm:items-center">
             <h3 className="text-lg font-medium text-indigo md:font-semibold">{title}</h3>

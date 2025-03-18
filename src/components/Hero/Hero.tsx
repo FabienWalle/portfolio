@@ -6,31 +6,31 @@ import { Ellipse, HeroImage } from '../../utils/images'
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
-  const role = useRoleSwitcher({ roles: ['FULLSTACK DEVELOPER', 'INDIE HACKER', 'SOLOPRENEUR'] })
+  const role = useRoleSwitcher({ roles: ['Développeur PHP Symfony Laravel', 'Développeur Typescript React NextJs'] })
 
   return (
     <section className="min-h-[calc(dvh-4rem)] bg-primary bg-small-glow bg-small-glow-position bg-no-repeat md:bg-large-glow-position lg:bg-large-glow">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-12 md:grid-cols-2 lg:p-4">
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <h1>
-            <span className="mb-2 block text-3xl font-bold text-white">Hi - I'm John Doe</span>
-            <span className="block text-[1.75rem] font-bold text-mint">{role}</span>
+            <span className="mb-2 block text-3xl font-bold text-white">Bonjour - Je Suis Fabien Walle</span>
+            <span className="block text-[1.75rem] font-bold text-mint md:w-[50vw]">{role}</span>
           </h1>
 
-          <h2 className="mt-3">Crafting innovative solutions to solve real-world problems</h2>
+          <h2 className="mt-3">Je transforme vos idées en expériences numériques fluides et innovantes</h2>
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a
               href="#"
               aria-label="Connect with me"
               className="min-w-32 cursor-pointer rounded-lg bg-mint px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]">
-              Hire Me
+              Travaillons ensemble
             </a>
             <a
               href="#"
               aria-label="View LinkedIn Profile"
               className="cursor-pointer rounded-lg bg-[#1C2B3A] px-[14px] py-[10px] text-sm text-white">
-              LinkedIn Profile
+              Profil Linkedin
             </a>
           </div>
         </div>

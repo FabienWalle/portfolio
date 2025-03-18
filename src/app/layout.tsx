@@ -7,10 +7,10 @@ import { Fira_Code } from 'next/font/google'
 
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
-const title = 'John Doe | Full-Stack Web Developer in Chicago'
+const title = 'Fabien Walle | Développeur PHP Typescript sur Aix-en-Provence'
 
 const description =
-  "Skilled full-stack web developer in Chicago. I build responsive, user-friendly websites with React, NextJS, and NodeJS. Let's bring your vision to life. Hire me today!"
+  "Je conçois et développe des applications modernes et performantes avec React, Next.js, TypeScript et Symfony. Basé à Aix-en-Provence, je concrétise vos idées en solutions numériques performantes. Discutons de votre projet et donnons vie à votre vision. Contactez-moi dès aujourd'hui !"
 
 const url = process.env.NEXT_PUBLIC_SITE_URL
 
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: 'John Doe Portfolio',
+    siteName: 'Portfolio Développeur Fabien Walle',
     type: 'website',
   },
   twitter: {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@Basit_Miyanji',
+    creator: '@Fabien_Walle',
   },
 }
 

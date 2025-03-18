@@ -2,8 +2,7 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
 
-// Image metadata
-export const alt = 'SOLOPRENEUR'
+export const alt = 'FABIEN WALLE DEVELOPPEUR PHP TYPESCRIPT AIX-EN-PROVENCE'
 
 export const size = {
   width: 1200,
@@ -27,7 +26,7 @@ export default async function Image() {
           padding: '1rem',
         }}>
         <h1 style={{ fontSize: 32, color: '#18f2e5', margin: 0 }}>
-          John Doe | Full-Stack Web Developer in Chicago
+          Fabien Walle | Développeur Typescript PHP sur Aix-en-Provence
         </h1>
         <h2 style={{ fontSize: 40, color: 'white', marginTop: 30 }}>
           Crafting innovative solutions to solve real-world problems

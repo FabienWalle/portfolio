@@ -11,7 +11,7 @@ const navItems = [
     href: '/',
   },
   {
-    label: '_projects',
+    label: '_projets',
     href: '/#projects',
   },
   {
@@ -19,7 +19,7 @@ const navItems = [
     href: '/#services',
   },
   {
-    label: '_contact-me',
+    label: '_contact',
     href: '/#contact',
   },
 ]
@@ -41,7 +41,7 @@ const Navbar = () => {
           <Link href="/">
             <div className="relative flex animate-fade-up items-center gap-3 transition-all duration-300 md:static">
               <Image src={Logo} alt="logo" className="h-8 w-10" />
-              <span className="text-primary">john_doe</span>
+              <span className="text-primary">Fabien Walle</span>
             </div>
           </Link>
         )}
