@@ -11,6 +11,10 @@ const navItems = [
     href: '/',
   },
   {
+    label: '_expériences',
+    href: '/#experiences',
+  },
+  {
     label: '_projets',
     href: '/#projects',
   },
@@ -20,7 +24,7 @@ const navItems = [
   },
   {
     label: '_contact',
-    href: '/#contact',
+    href: 'mailto:fabienwalle13@gmail.com',
   },
 ]
 

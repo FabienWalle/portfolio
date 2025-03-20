@@ -29,4 +29,26 @@ const getAllProjects = async (): Promise<Project[]> => {
   }
 }
 
-export { getAllProjects }
+const getAllExperiences = async (): Promise<Project[]> => {
+  try {
+    const experiencesPath = path.join(process.cwd(), '/content/experiences')
+    const experiencesName = await fs.readdir(experiencesPath)
+
+    const experiences = await Promise.all(
+      experiencesName.map(async (experienceName) => {
+        const filePath = path.join(experiencesPath, experienceName)
+        const experiencesDetails = await readProjectFile(filePath)
+        return experiencesDetails
+      }),
+    )
+
+    experiences.sort((a, b) => a.priority - b.priority)
+
+    return experiences
+  } catch (error) {
+    console.error('Error:', error)
+    return []
+  }
+}
+
+export { getAllProjects, getAllExperiences }
