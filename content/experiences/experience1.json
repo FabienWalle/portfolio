@@ -1,0 +1,9 @@
+{
+  "priority": 1,
+  "title": "Développeur Symfony React",
+  "company": "WinMedia",
+  "location":"La Ciotat",
+  "shortDescription": "WinOffice : application interne CRM / ERP en Symfony Api Platform et React - Gestion des contrats client, suivi des demandes de congés, monitoring des applications client",
+  "cover": "/images/winmedia.jpg",
+  "duration": "octobre 2023 - octobre 2024"
+}

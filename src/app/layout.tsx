@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: url,
   },
+  // <meta name="google-site-verification" content="Kkn_hLJqALmPiYMc6TaOx7skVhfsBtar7rTMeCT8Swk" />
   openGraph: {
     title,
     description,
@@ -35,6 +36,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     creator: '@Fabien_Walle',
   },
+  other: {
+    'google-site-verification': "Kkn_hLJqALmPiYMc6TaOx7skVhfsBtar7rTMeCT8Swk"
+  }
 }
 
 export default function RootLayout({
@@ -43,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`${firaCode.className}`}>
         <header>
           <Navbar />

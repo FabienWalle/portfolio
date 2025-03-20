@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Earning, GithubDark, Likes, Preview, Star, Timer } from '../../utils/icons'
 import { Project } from '@/lib/types'
+import { FaUserGraduate } from 'react-icons/fa';
 
 const IconText: React.FC<{ icon: string; text: string }> = ({ icon, text }) => (
   <li className="flex gap-2">
@@ -27,6 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
     siteAge,
     type,
     cover,
+    learning,
   } = data
 
   return (
@@ -37,10 +39,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             <h3 className="text-lg font-medium text-indigo md:font-semibold">{title}</h3>
             {type && (
               <span
-                className={`h-7 w-fit rounded-md bg-[#FFFFFF1A] p-1 text-sm ${type === 'New 🔥' ? 'animate-blink text-[#FFA800]' : 'text-mint'} backdrop-blur-[80px]`}>
+                className={`flex items-center text-center h-7 w-fit rounded-md bg-[#FFFFFF1A] ps-1 py-1.5 text-sm ${type === 'Nouveau 🔥' ? 'animate-blink text-[#FFA800]' : 'text-mint'} backdrop-blur-[80px]`}>
                 {type}
               </span>
             )}
+            {learning && (
+                <li className="flex gap-2">
+                <FaUserGraduate className='size-5 text-orange-500'/>
+              </li>
+              )}
           </div>
           <ul className="mt-3 flex flex-col flex-wrap gap-2 sm:flex-row sm:gap-4">
             {(visitors || numberOfSales) && (
@@ -75,7 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
               className="flex gap-2 text-sm text-mint underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
               target="_blank">
               <Image src={Preview} alt="view icon" className="h-auto w-[18px] md:w-5" />
-              <span>Live Preview</span>
+              <span>Voir en direct</span>
             </a>
           )}
           {githubLink && (
@@ -84,7 +91,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
               className="flex gap-2 text-sm text-mint underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
               target="_blank">
               <Image src={GithubDark} alt="github icon" className="w-[18px] md:w-5" />
-              <span>Github Link</span>
+              <span>Dépôt Github</span>
             </a>
           )}
         </div>

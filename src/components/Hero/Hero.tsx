@@ -3,6 +3,7 @@ import useRoleSwitcher from '@/hooks/useRoleSwitcher'
 import useRotatingAnimation from '@/hooks/useRotatingAnimation'
 import Image from 'next/image'
 import { Ellipse, HeroImage } from '../../utils/images'
+import DownloadResumeButton from '../buttons/DownloadResumeButton'
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
@@ -21,17 +22,18 @@ const Hero = () => {
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a
-              href="#"
+              href="mailto:fabienwalle13@gmail.com"
               aria-label="Connect with me"
-              className="min-w-32 cursor-pointer rounded-lg bg-mint px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]">
+              className="min-w-32 cursor-pointer rounded-lg bg-mint px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E] flex items-center">
               Travaillons ensemble
             </a>
             <a
               href="#"
               aria-label="View LinkedIn Profile"
-              className="cursor-pointer rounded-lg bg-[#1C2B3A] px-[14px] py-[10px] text-sm text-white">
+              className="flex items-center cursor-pointer rounded-lg bg-[#1C2B3A] px-[14px] py-[10px] text-sm text-white">
               Profil Linkedin
             </a>
+            <DownloadResumeButton/>
           </div>
         </div>
 

@@ -1,26 +1,22 @@
-import { Codepen, Facebook, Github, Instagram, LinkedIn, X } from '@/utils/icons'
+import { Github, LinkedIn} from '@/utils/icons'
 import Image from 'next/image'
 
 const socialIcons = [
-  { href: '', icon: Github },
-  { href: '', icon: LinkedIn },
-  { href: '', icon: Codepen },
-  { href: '', icon: X },
-  { href: '', icon: Instagram },
-  { href: '', icon: Facebook },
+  { href: 'https://github.com/FabienWalle?tab=repositories', icon: Github },
+  { href: 'https://www.linkedin.com/in/fabien-walle/', icon: LinkedIn },
 ]
 
 const footerSections = [
-  { title: 'John Doe', href: '#home', content: 'Crafting high-performance web applications.' },
-  { title: 'About', href: '#about', content: 'Get to know my journey & expertise.' },
-  { title: 'Projects', href: '#projects', content: 'Explore my most impactful work.' },
-  { title: 'Skills', href: '#skills', content: 'Technologies and tools I excel at.' },
+  { title: 'Fabien Walle', href: '#home', content: 'Des applications conçues avec rigueur et satisfaction client.' },
+  { title: 'À propos', href: '#experiences', content: 'Découvrez mon parcours et mon expertise.' },
+  { title: 'Projets', href: '#projects', content: 'Découvrez ce sur quoi je travaille.' },
+  { title: 'Compétences', href: '#skills', content: 'Technologies et outils dans lesquels j\'excelle.' },
   {
     title: 'Services',
     href: '#services',
-    content: 'What I can offer to bring value to your project.',
+    content: 'Ce que je peux apporter à vos projets.',
   },
-]
+];
 
 const Footer = () => (
   <footer id="contact" className="bg-secondary px-4 text-white md:px-0">
@@ -43,13 +39,13 @@ const Footer = () => (
 
     <div className="mx-auto max-w-[1200px] px-4 py-8">
       <div className="flex flex-col items-center justify-between md:flex-row">
-        <p className="mb-4 text-sm font-normal md:mb-0">© 2025 Abdul Basit | Coded with 💜</p>
+        <p className="mb-4 text-sm font-normal md:mb-0">© 2025 Fabien Walle | Coded with 💜</p>
         <ul className="flex space-x-5">
           {socialIcons.map((item, index) => (
             <li
               key={index}
               className="cursor-pointer bg-transparent transition-transform duration-300 hover:scale-110">
-              <a href={item.href} className="flex h-full w-full items-center justify-center">
+              <a href={item.href} target='_blank' className="flex h-full w-full items-center justify-center">
                 <Image src={item.icon} width={22} height={22} alt={item.href} />
               </a>
             </li>

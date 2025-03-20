@@ -6,37 +6,41 @@ import {
   PHPIcon,
   ReactIcon,
   SymfonyIcon,
-  TailwindCSS,
   TypescriptIcon,
 } from '../utils/icons'
 
 export const serviceData = [
   {
-    icon: JavaScriptIcon,
-    title: 'JavaScript Development',
-    shortDescription: 'Creating dynamic and interactive web applications using JavaScript.',
-  },
-  {
-    icon: ReactIcon,
-    title: 'React.js Development',
-    shortDescription: 'Building modern and responsive user interfaces with React.js.',
-  },
-  {
-    icon: NextjsIcon,
-    title: 'Next.js Development',
-    shortDescription: 'Creating server-rendered React applications with Next.js.',
+    icon: PHPIcon,
+    title: 'PHP 8',
+    shortDescription: 'Développement backend performant et sécurisé avec PHP 8.',
   },
   {
     icon: TypescriptIcon,
-    title: 'TypeScript Development',
-    shortDescription: 'Ensuring robust and maintainable code with TypeScript.',
+    title: 'TypeScript',
+    shortDescription: 'Amélioration de la qualité du code grâce au typage statique de TypeScript.',
   },
   {
-    icon: TailwindCSS,
-    title: 'Tailwind CSS Styling',
-    shortDescription: 'Designing beautiful and responsive interfaces with Tailwind CSS.',
+    icon: ReactIcon,
+    title: 'React 19',
+    shortDescription: 'Création d\'interfaces utilisateur interactives et optimisées avec React 19.',
   },
-]
+  {
+    icon: NextjsIcon,
+    title: 'Next.js 15',
+    shortDescription: 'Développement d\'applications full-stack avec rendu côté serveur et génération statique.',
+  },
+  {
+    icon: SymfonyIcon,
+    title: 'Symfony 7',
+    shortDescription: 'Framework PHP pour des applications web robustes, maintenables et scalables.',
+  },
+  {
+    icon: ApiPlatformIcon,
+    title: 'Api Platform 4',
+    shortDescription: 'Conception rapide d\'API RESTful modernes et auto-documentées.',
+  },
+];
 
 export const skillList = [
   {

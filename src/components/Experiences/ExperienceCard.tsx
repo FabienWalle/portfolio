@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import { Earning, GithubDark, Likes, Preview, Star, Timer } from '../../utils/icons'
-import { Project } from '@/lib/types'
+import { Company, GithubDark, Preview, Timer } from '../../utils/icons'
+import { Experience } from '@/lib/types'
 
 const IconText: React.FC<{ icon: string; text: string }> = ({ icon, text }) => (
   <li className="flex gap-2">
@@ -10,23 +10,20 @@ const IconText: React.FC<{ icon: string; text: string }> = ({ icon, text }) => (
 )
 
 interface ProjectCardProps {
-  data: Project
+  data: Experience
 }
 
 const ExperienceCard: React.FC<ProjectCardProps> = ({ data }) => {
   const {
     title,
     shortDescription,
-    visitors,
-    earned,
-    ratings,
-    githubStars,
-    numberOfSales,
     livePreview,
     githubLink,
-    siteAge,
+    duration,
     type,
     cover,
+    company,
+    location
   } = data
 
   return (
@@ -43,14 +40,15 @@ const ExperienceCard: React.FC<ProjectCardProps> = ({ data }) => {
             )}
           </div>
           <ul className="mt-3 flex flex-col flex-wrap gap-2 sm:flex-row sm:gap-4">
-            {(visitors || numberOfSales) && (
-              <IconText text={(visitors || numberOfSales)?.toString() || ''} icon={Likes} />
+            {company && location && (
+              <li className="flex gap-2">
+                <Image src={Company} alt="Company Icon" className="size-[18px] md:size-5 text-white" />
+                <span className="text-sm">
+                  {company} || {location}
+                </span>
+              </li>
             )}
-            {siteAge && <IconText text={siteAge} icon={Timer} />}
-            {earned && <IconText text={earned} icon={Earning} />}
-            {(ratings || githubStars) && (
-              <IconText text={(ratings || githubStars)?.toString() || ''} icon={Star} />
-            )}
+            {duration && <IconText text={duration} icon={Timer} />}
           </ul>
         </div>
         <figure className="flex justify-end overflow-hidden">
@@ -75,7 +73,7 @@ const ExperienceCard: React.FC<ProjectCardProps> = ({ data }) => {
               className="flex gap-2 text-sm text-mint underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
               target="_blank">
               <Image src={Preview} alt="view icon" className="h-auto w-[18px] md:w-5" />
-              <span>Live Preview</span>
+              <span>Voir en direct</span>
             </a>
           )}
           {githubLink && (
@@ -84,7 +82,7 @@ const ExperienceCard: React.FC<ProjectCardProps> = ({ data }) => {
               className="flex gap-2 text-sm text-mint underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
               target="_blank">
               <Image src={GithubDark} alt="github icon" className="w-[18px] md:w-5" />
-              <span>Github Link</span>
+              <span>Dépôt Github</span>
             </a>
           )}
         </div>

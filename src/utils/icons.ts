@@ -21,6 +21,7 @@ import NodejsIcon from '../assets/icons/nodejs.svg'
 import PHPIcon from "../assets/icons/php.svg"
 import Preview from '../assets/icons/preview.svg'
 import ReactIcon from '../assets/icons/react.svg'
+import ResumeIcon from '../assets/icons/resume.svg'
 import SocketIcon from '../assets/icons/socket.svg'
 import Star from '../assets/icons/star.svg'
 import SymfonyIcon from '../assets/icons/symfony.svg'
@@ -29,6 +30,7 @@ import Timer from '../assets/icons/timer.svg'
 import TypescriptIcon from '../assets/icons/typescript.svg'
 import X from '../assets/icons/x.svg'
 import Logo from '../assets/logo/logo.svg'
+import Company from '@/assets/icons/company.svg'
 
 export {
   ApiPlatformIcon,
@@ -38,6 +40,7 @@ export {
   ChevronRightIcon,
   CloseIcon,
   Codepen,
+  Company,
   Earning,
   ExpressjsIcon,
   Facebook,
@@ -55,6 +58,7 @@ export {
   PHPIcon,
   Preview,
   ReactIcon,
+  ResumeIcon,
   SocketIcon,
   Star,
   SymfonyIcon,

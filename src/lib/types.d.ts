@@ -12,6 +12,13 @@ export interface Project {
   numberOfSales?: string
   type: string
   siteAge?: string
+  learning?:boolean
+}
+
+export interface Experience extends Project {
+  company? : string,
+  location?:string,
+  duration?:string,
 }
 
 export interface Heading {

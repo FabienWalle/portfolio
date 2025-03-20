@@ -1,9 +1,0 @@
-{
-  "priority": 1,
-  "title": "Artfolio",
-  "shortDescription": "CMS sur mesure pour une illustratrice animatrice 3D - NextJS Prisma PostgreSQL Vercel Neon",
-  "cover": "/images/artfolio_snapshot.png",
-  "livePreview": "https://marion-walle.vercel.app",
-  "type": "Commande client 🙍‍♂️",
-  "siteAge": "mars 2025"
-}

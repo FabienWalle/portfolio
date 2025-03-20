@@ -2,6 +2,8 @@
   "priority": 2,
   "title": "Laravel",
   "shortDescription": "Apprentissage de Laravel avec Laracast",
+  "learning":true,
   "cover": "/images/laracasts.png",
-  "githubLink":"https://github.com/FabienWalle/pixel-positions"
+  "githubLink":"https://github.com/FabienWalle/pixel-positions",
+    "siteAge": "janvier - février 2025"
 }
