@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-
 import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
 import { Fira_Code } from 'next/font/google'
@@ -22,7 +21,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: url,
   },
-  // <meta name="google-site-verification" content="Kkn_hLJqALmPiYMc6TaOx7skVhfsBtar7rTMeCT8Swk" />
   openGraph: {
     title,
     description,

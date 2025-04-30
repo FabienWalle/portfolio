@@ -1,0 +1,8 @@
+{
+  "priority": 5,
+  "title": "Budget",
+  "shortDescription": "Grahpiques à partir des données bancaires importées en CSV - Laravel, ChartJs, PostgeSQL",
+  "cover": "/images/laravel-budget.png",
+  "githubLink": "https://github.com/FabienWalle/laravel-budget",
+  "siteAge": "mars 2025"
+}

@@ -1,9 +1,9 @@
 {
   "priority": 3,
-  "title": "Angular",
-  "shortDescription": "Tutorial officiel + cours Udemy sur les bases d'Angular",
-  "learning": true,
-  "cover": "/images/angular-learning.png",
-  "githubLink": "https://github.com/FabienWalle/angular-learnings",
-  "siteAge": "décembre 2024"
+  "title": "Laravel",
+  "shortDescription": "Apprentissage de Laravel avec Laracast",
+  "learning":true,
+  "cover": "/images/laracasts.png",
+  "githubLink":"https://github.com/FabienWalle/pixel-positions",
+    "siteAge": "janvier - février 2025"
 }

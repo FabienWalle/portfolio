@@ -1,9 +1,8 @@
 {
   "priority": 4,
-  "title": "Reddit-alike",
-  "shortDescription": "Réseau social inspiré de Reddit, réalisé en NextJs - apprentissage avec Udemy",
-  "learning": true,
-  "cover": "/images/reddit-alike.png",
-  "githubLink": "https://github.com/FabienWalle/reddit-alike",
-  "siteAge": "novembre 2024"
+  "title": "Artfolio",
+  "shortDescription": "CMS sur mesure pour une illustratrice animatrice 3D - NextJS Prisma PostgreSQL Vercel Neon",
+  "cover": "/images/artfolio_snapshot.png",
+  "livePreview": "https://marion-walle.vercel.app",
+  "siteAge": "février - mars 2025"
 }

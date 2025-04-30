@@ -7,7 +7,7 @@ import Skills from '@/components/Skills/Skills'
 import { getAllExperiences, getAllProjects } from '@/services'
 
 export default async function Home() {
-  const projects = await getAllProjects()
+  const projects = (await getAllProjects()).reverse()
   const experiences = await getAllExperiences()
 
   return (

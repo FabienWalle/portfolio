@@ -1,0 +1,8 @@
+{
+  "priority": 6,
+  "title": "Chat en temps réel",
+  "shortDescription": "(Tutorial de Pentinimax) Conversation en temps réel avec Symfony 7, Mercure, Docker, HTMX",
+  "cover": "/images/realtime-chat.png",
+  "githubLink": "https://github.com/FabienWalle/symfony-docker-mercure",
+  "siteAge": "avril 2025"
+}
