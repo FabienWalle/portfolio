@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <h1>
             <span className="mb-2 block text-3xl font-bold text-white">Bonjour - Je Suis Fabien Walle</span>
-            <span className="block text-[1.75rem] font-bold text-mint md:w-[50vw]">{role}</span>
+            <span className="block text-[1.5rem] sm:text-[1.75rem] font-bold text-mint md:w-[50vw]">{role}</span>
           </h1>
 
           <h2 className="mt-3">Je transforme vos idées en expériences numériques fluides et innovantes</h2>
@@ -28,7 +28,8 @@ const Hero = () => {
               Travaillons ensemble
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/fabien-walle/"
+              target='_blank'
               aria-label="View LinkedIn Profile"
               className="flex items-center cursor-pointer rounded-lg bg-[#1C2B3A] px-[14px] py-[10px] text-sm text-white">
               Profil Linkedin
